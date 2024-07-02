@@ -1,0 +1,79 @@
+#include <iostream>
+#include <string>
+#include <sstream>
+int main(){
+   /* //loop for array
+    int scores[10];
+    for (size_t i{0}; i<10 ;  i++)
+    {   scores[i] = i*10; 
+        std::cout << "score :[" << i << "]" << scores[i] << std::endl;
+    }#
+    //declare amd initializes at the same time
+    std::string salaries[3];
+    double numericsalaries[3];
+    std::cout << "please enter your last 3 years salary:" << std::endl;
+    
+    for (size_t i=0; i<3;++i){
+        std::cout << "year " << (i+1) << ":" ;
+        std::cin >> salaries[i];
+        std::istringstream(salaries[i]) >> numericsalaries[i];
+    } */
+
+    //2. 
+    int families[5] {12,5,3};
+    for(size_t i{0}; i<5; ++i){
+        std::cout << "families[" << i << "] :" << families[i] << std::endl;    }
+     
+    
+    
+    //omit the size of the array at declaration 
+    int class_sizes[] {10,12,15,11,18,17,24};
+    //will print this with a range based for loop
+    for(auto value : class_sizes){
+        std::cout << "value :" << value << std::endl;
+
+    }
+    /*read only arrays
+    const int birds[] {10,12,15,11,18,17,23,56};
+    birds[2] = 8;
+    */
+
+  /* //sum up scores array , store result in sum
+   int scores [] {2,5,8,6,9};
+   int sum {0};
+
+   for(int element : scores)
+ {sum += element;}
+ std::cout << "score sum :" << sum << std::endl; */
+
+  
+  
+  /*//size of scores
+ 
+ int scores []  {1,2,3,4,5,6,7,8,9,0,12};
+ int count {std::size(scores)};
+ for (size_t i {0} ; i < count ; ++i){
+    std::cout << "scores [" << i << "]" << scores[i] << std::endl;
+} 
+ */
+ 
+ /* // range based for loop
+ 
+ int scores[] {1,2,3,6,7};
+ for( auto i : scores){
+ std::cout << " value : " << i << std::endl;}
+ 
+ */
+
+
+    
+    
+
+
+
+     
+     
+    
+
+    return 0;
+}
