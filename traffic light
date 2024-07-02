@@ -1,0 +1,61 @@
+#include <iostream>
+#include <string>
+ int main(){
+    std::cout << "please enter your conditons :" << std::endl;
+    std::string condition1;
+    std::string condition2;
+    std::cin >> condition1 >> condition2;
+    
+    bool greenlight{false};
+    bool redlight{false};
+    bool yellowlight{false};
+    bool policestop {false};
+
+    if(condition1 == "greenlight"){
+        greenlight = true;
+    }
+    if(condition1 == "redlight"){
+        greenlight = true;
+    }
+    if(condition1 == "yellowlight"){
+        greenlight = true;
+    }
+    if(condition2 == "policestop"){
+        greenlight = true;
+    }
+    else {
+        std::cerr << "please enter valid conditons" << std::endl; }
+    if(greenlight && policestop){
+        std::cout << "stop!" << std::endl;
+
+    }
+else  if(greenlight && !policestop){
+        std::cout << "GO" << std::endl;
+        
+    }
+    else  if(yellowlight && !policestop){
+        std::cout << "stop but start vehicles engine only" << std::endl;
+        
+    }
+else  if(yellowlight && policestop){
+        std::cout << "stop and do not start vehicle engine " << std::endl;}
+else if(redlight){
+    std::cout << "STOP!!" << std::endl; }
+
+
+else {
+    std::cout << "stop" << std::endl;
+}
+        
+return 0;
+        
+    }
+
+
+
+
+
+
+
+
+ 
